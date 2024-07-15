@@ -1,0 +1,55 @@
+[
+    {
+        "event_time": "12:30:00",
+        "callback": "update_offset",
+        "description": "NTP Offset Update",
+        "repeat": "day",
+	"pin": null,
+	"pin_initial_value": false
+    },
+    {
+        "event_time": "00:50:00",
+        "callback": "turn_on_starter",
+	"comment_on_time":"00:00:00",
+        "description": "Start Trigger Signal",
+        "repeat": "hour",
+	"pin": 21,
+	"pin_initial_value": true
+    },
+    {
+        "event_time": "00:50:30",
+        "callback": "give_pulse",
+	"comment_on_time":"00:00:10",
+        "description": "First Sync Pulse",
+        "repeat": "hour",
+	"pin": 20,
+	"pin_initial_value": false
+    },
+    {
+        "event_time": "00:50:45",
+        "callback": "give_pulse",
+	"comment_on_time":"00:59:45",
+        "description": "Second Sync Pulse",
+        "repeat": "hour",
+	"pin": 20,
+	"pin_initial_value": false
+    },
+    {
+        "event_time": "00:51:30",
+        "callback": "turn_off_starter",
+	"comment_on_time":"00:59:55",
+        "description": "Stop Pulse",
+        "repeat": "hour",
+	"pin": 21,
+	"pin_initial_value": true
+    },
+    {
+        "event_time": "2023-04-25T22:30:00",
+	"comment_on_time_format":"YYYY-MM-DDTHH:MM:SS",
+        "callback": "turn_off_starter",
+        "description": "Stop Pulse",
+        "repeat": "none",
+	"pin": 19,
+	"pin_initial_value": false
+    }
+]
