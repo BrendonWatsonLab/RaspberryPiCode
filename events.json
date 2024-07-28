@@ -23,7 +23,8 @@
         "description": "First Sync Pulse",
         "repeat": "hour",
 	"pin": 20,
-	"pin_initial_value": false
+	"pin_initial_value": false,
+	"duration": 0.2
     },
     {
         "event_time": "00:50:45",
@@ -32,7 +33,8 @@
         "description": "Second Sync Pulse",
         "repeat": "hour",
 	"pin": 20,
-	"pin_initial_value": false
+	"pin_initial_value": false,
+	"duration": 0.2
     },
     {
         "event_time": "00:51:30",
